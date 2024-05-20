@@ -1,15 +1,11 @@
-
 .center-image {
-    display: block;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px auto;
     max-width: 15%;
     height: auto;
     min-width: 120px;
 }
 
-.circle {
+.circle, .rectangle, .rectangle-qr, .rectangle-doc {
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -22,17 +18,17 @@
     border: solid 2px black;
 }
 
-.circle:hover {
-    transform: scale(1.2);
+.circle:hover, .rectangle:hover, .rectangle-qr:hover, .rectangle-doc:hover {
+    transform: scale(1.1);
 }
 
-.circle-container {
+.circle-container, .rectangle-container {
     text-align: center;
     display: inline-block;
     vertical-align: top;
 }
 
-.text {
+.text, .text-sub {
     margin-top: 2px;
     font-size: 14px;
 }
@@ -63,50 +59,16 @@
     max-width: 400px;
     height: 200px;
     border-radius: 20px;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 10px;
-    border: solid 2px black;
-}
-
-
-.rectangle:hover,
-.rectangle-qr:hover,
-.rectangle-doc:hover {
-    transform: scale(1.1);
-}
-
-.rectangle-container {
-    text-align: center;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .rectangle-qr {
     width: 200px;
     height: 200px;
     border-radius: 5px;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 10px;
-    border: solid 2px black;
 }
 
 .rectangle-doc {
     width: 200px;
     height: 300px;
     border-radius: 20px;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 10px;
-    border: solid 2px black;
 }
