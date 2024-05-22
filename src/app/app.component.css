@@ -1,8 +1,28 @@
 .center-image {
     margin: 10px auto;
-    max-width: 15%;
+    max-width: 16%;
     height: auto;
-    min-width: 120px;
+    min-width: 140px;
+    transform-origin: center;
+    animation: oscillate 2s infinite ease-in-out;
+}
+
+@keyframes oscillate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .circle, .rectangle, .rectangle-qr, .rectangle-doc {
